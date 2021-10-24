@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Video</title>
+    <!--Link--> 
+    <link rel="stylesheet" href="projectideas.css">
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <a style="text-decoration:none" href="index.html"><h2 class="logo">back to Home</h2></a>
+          <div class="toggle"></div>
+        </header>
+    
+        <section id="testimonials">
+          <div class="testimonial-heading">
+              <h1>Pitch Video</h1>
+          </div>
+        </section>
+        
+        <section id="project">
+          <section class="project-box-container">
+            <div class="wrapper">
+              <div class="videowrapper">
+                  <iframe src="https://www.youtube.com/embed/rqeytvVZxn8" frameborder="0" allowfullscreen></iframe>
+              </div>
+              
+          </div>
+            
+             
+          </section>
+      </section>
+    </section>
+    
+       <!--MENU--> 
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">Our Team</a></li>
+          <li><a href="project.html">BSOD Cinema</a></li>
+        </ul>
+      </div>
+
+      <!--SCRIPT--> 
+      <script>
+            const menuToggle = document.querySelector('.toggle');
+            const showcase = document.querySelector('.showcase');
+
+            menuToggle.addEventListener('click', () =>{
+                menuToggle.classList.toggle('active');
+                showcase.classList.toggle('active');})
+      </script>
+</body>
+
+
+</html>

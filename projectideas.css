@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e63946;
+}
+header .logo{
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase{
+  position:absolute;
+  width: 100%;
+  min-height: 100vh;
+  padding: 140px 100px;
+  display:flex;
+  justify-content:left;
+  align-items: center;
+  background:rgb(255, 255, 255);
+  transition: 0.5s;
+  z-index: 2;
+  flex-wrap: wrap;
+  background-image: url(image/Untitled\ design\ \(15\).png);
+}
+.showcase.active{
+  right: 300px;
+}
+
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  mix-blend-mode: overlay;
+}
+.text{
+  justify-content:left;
+  z-index: 10;
+  margin-top: 100px;
+}
+.text h2{
+  font-size: 2em;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3{
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+.text p{
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+button{
+  width: 140px;
+  border: 0;
+  padding: 10px 30px;
+  text-decoration: none;
+  outline: none;
+  background:#fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: width 0.5s;
+  margin-top: 20px;
+}
+
+button:hover{
+  width: 160px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button img{
+  width: 20px;
+  display: none;
+}
+
+button:hover img{
+  display: block;
+}
+
+/*Menu Section*/
+.menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.menu ul{
+  position: relative;
+}
+.menu ul li{
+  list-style: none;
+}
+.menu ul li a{
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+.menu ul li a:hover{
+  color: #007ad8; 
+}
+
+@media (max-width: 991px){
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .showcase{
+    padding: 140px 10px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+
+#project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.project-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+.project-box{
+  width:100%;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+  background-color: #e0dfd593;
+  padding: 20px;
+  margin: 50px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.project-box h2{
+  color: #007ad8;
+}
+
+
+/*Feedback Section*/
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-heading h1{
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: #202020;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.247);
+}
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+.testimonial-box{
+  width:700px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.089);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1060px){
+  .testimonial-box{
+      width:45%;
+      padding: 10px;
+  }
+}
+@media(max-width:790px){
+  .testimonial-box{
+      width:100%;
+  }
+  .testimonial-heading h1{
+      font-size: 1.4rem;
+  }
+}
+@media(max-width:340px){
+  .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+  }
+
+}
+::selection{
+  color: #ffffff;
+  background-color: #252525;
+}
+
+.tech{
+  display: flex;
+  flex-wrap: wrap;
+}
+img{
+  width: 50%;
+  border-radius: 20px;
+  padding:10px;
+}
+.blockchain{
+  width: 100%;
+}
+.rasarmak{
+  width: 33%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.wrapper{
+  margin: 0 auto;
+  width: 1000px;
+}
+.videowrapper{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+.videowrapper iframe{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
